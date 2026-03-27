@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".github",
+      "CLAUDE.md",
+      "TODO.md",
+      "SETUP.md",
+      "_redirects",
+      "*.md",
+      ".git"
+    ]
+  }
+}
