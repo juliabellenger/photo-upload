@@ -353,14 +353,19 @@
     <div id="upload-area">
 
       <div class="drop-zone" id="drop-zone">
-        <input type="file" id="file-input" accept=".jpg,.jpeg,.png,.gif,.webp,.heic,.heif" multiple />
+        <input type="file" id="file-input" accept="image/*" multiple />
         <span class="drop-icon">📷</span>
         <h2>Share Your Photos</h2>
-        <p>drop photos here, or tap to browse your gallery</p>
+        <p>drop photos here</p>
         <div class="or-divider">· · · or · · ·</div>
-        <button class="camera-btn" onclick="document.getElementById('camera-input').click(); event.stopPropagation();">
-          Take a Photo
-        </button>
+        <div style="display:flex; gap:10px; justify-content:center; position:relative; z-index:1;">
+          <button class="camera-btn" onclick="document.getElementById('file-input').click(); event.stopPropagation();">
+            Browse Gallery
+          </button>
+          <button class="camera-btn" onclick="document.getElementById('camera-input').click(); event.stopPropagation();">
+            Take a Photo
+          </button>
+        </div>
         <input class="camera-input" type="file" id="camera-input" accept="image/*" capture="environment" />
       </div>
 
