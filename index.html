@@ -78,6 +78,20 @@
       border-radius: 4px;
       padding: 20px 24px;
       box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .project-qr {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+    }
+
+    .project-info {
+      flex: 1;
+      min-width: 0;
     }
 
     .project-top {
@@ -164,20 +178,26 @@
 
   <main>
     <div class="project-card">
-      <div class="project-top">
-        <div class="project-name">Julia <span style="font-family:'Pinyon Script',cursive; font-weight:300; color:var(--gold);">&</span> Tom <div class="project-meta">Wedding Photos</div></div>
-        <div class="project-actions">
-          <a class="btn btn-primary" href="photo-upload/wedding.html">Upload Photos</a>
-          <a class="btn btn-secondary" href="https://console.firebase.google.com/project/bellenger-wedding-photos/storage" target="_blank" rel="noopener">Admin View</a>
+      <img class="project-qr" src="wedding-qr.png" alt="QR code for Julia & Tom wedding upload" />
+      <div class="project-info">
+        <div class="project-top">
+          <div class="project-name">Julia <span style="font-family:'Pinyon Script',cursive; font-weight:300; color:var(--gold);">&</span> Tom <div class="project-meta">Wedding Photos</div></div>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="photo-upload/wedding.html">Upload Photos</a>
+            <a class="btn btn-secondary" href="https://console.firebase.google.com/project/bellenger-wedding-photos/storage" target="_blank" rel="noopener">Admin View</a>
+          </div>
         </div>
       </div>
     </div>
     <div class="project-card">
-      <div class="project-top">
-        <div class="project-name">Photo Share<div class="project-meta">Shared Photos</div></div>
-        <div class="project-actions">
-          <a class="btn btn-primary" href="photo-upload/share.html">Upload Photos</a>
-          <a class="btn btn-secondary" href="https://console.firebase.google.com/project/bellenger-wedding-photos/storage" target="_blank" rel="noopener">Admin View</a>
+      <img class="project-qr" src="share-qr.png" alt="QR code for shared photos upload" />
+      <div class="project-info">
+        <div class="project-top">
+          <div class="project-name">Photo Share<div class="project-meta">Shared Photos</div></div>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="photo-upload/share.html">Upload Photos</a>
+            <a class="btn btn-secondary" href="https://console.firebase.google.com/project/bellenger-wedding-photos/storage" target="_blank" rel="noopener">Admin View</a>
+          </div>
         </div>
       </div>
     </div>
